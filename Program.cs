@@ -6,11 +6,32 @@ namespace baithi
         internal int dienthoai;
         internal string maphong;
         internal string tenphong;
+        //internal NhanVien matruongphong;
+        internal LinkedList<NhanVien> nhanviens;
+        //internal DateTime nambonhiem;
         public PhongBan(int dienthoai, string maphong, string tenphong)
         {
             this.dienthoai = dienthoai;
             this.maphong = maphong;
             this.tenphong = tenphong;
+            this.nhanviens = new LinkedList<NhanVien>();
+        }
+        public void ThemNV(LinkedList<NhanVien> dsnv)
+        {
+           foreach(NhanVien nhanvien in dsnv)
+           {
+            if (nhanvien.phongban.maphong == maphong)
+            {
+                nhanviens.AddLast(nhanvien);
+            }
+           }
+        }
+        public void LietKeNVPB()
+        {
+            foreach (NhanVien nhanvien in nhanviens)
+            {
+                nhanvien.Output();
+            }
         }
     }
     class NhanVien
@@ -19,12 +40,22 @@ namespace baithi
         internal string hoten;
         internal DateTime ngaysinh;
         internal double hsluong;
+        //internal NhanVien nvql;
+        internal PhongBan phongban;
         public NhanVien(string masv, string hoten, string ngaysinh, double hsluong)
         {
             this.masv = masv;
             this.hoten = hoten;
             this.ngaysinh = DateTime.Parse(ngaysinh);
             this.hsluong = hsluong;
+        }
+        public void ThemPB(PhongBan phongban)
+        {
+            this.phongban = phongban;
+        }
+        public void Output()
+        {
+            Console.WriteLine($"{hoten}");
         }
         class CongTrinh
         {
@@ -71,6 +102,23 @@ namespace baithi
                 this.ngaythamgia = DateTime.Parse(ngaythamgia);
                 this.songaycong = DateTime.Now.Subtract(this.ngaythamgia);
             }
+        }
+    }
+    class Test
+    {
+        static LinkedList<NhanVien> dsnv= new LinkedList<NhanVien>();
+        static void Main()
+        {
+
+            PhongBan pb1 = new PhongBan(123456789, "PB1", "Phong nhan su");
+            NhanVien nv1 = new NhanVien("NV1", "Anh Kiet", "4 9 2003", 3.0);
+            NhanVien nv2 = new NhanVien("NV2", "Nhu Quynh", "02 01 2003", 4.0);
+            dsnv.AddLast(nv1);
+            dsnv.AddLast(nv2);
+            nv1.ThemPB(pb1);
+            nv2.ThemPB(pb1);    
+            pb1.ThemNV(dsnv);      
+            pb1.LietKeNVPB();
         }
     }
 }

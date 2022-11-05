@@ -3,3 +3,13 @@ D:\KIET0904\baithi\obj\Debug\net6.0\baithi.GeneratedMSBuildEditorConfig.editorco
 D:\KIET0904\baithi\obj\Debug\net6.0\baithi.AssemblyInfoInputs.cache
 D:\KIET0904\baithi\obj\Debug\net6.0\baithi.AssemblyInfo.cs
 D:\KIET0904\baithi\obj\Debug\net6.0\baithi.csproj.CoreCompileInputs.cache
+D:\KIET0904\baithi\bin\Debug\net6.0\baithi.exe
+D:\KIET0904\baithi\bin\Debug\net6.0\baithi.deps.json
+D:\KIET0904\baithi\bin\Debug\net6.0\baithi.runtimeconfig.json
+D:\KIET0904\baithi\bin\Debug\net6.0\baithi.dll
+D:\KIET0904\baithi\bin\Debug\net6.0\baithi.pdb
+D:\KIET0904\baithi\obj\Debug\net6.0\baithi.dll
+D:\KIET0904\baithi\obj\Debug\net6.0\refint\baithi.dll
+D:\KIET0904\baithi\obj\Debug\net6.0\baithi.pdb
+D:\KIET0904\baithi\obj\Debug\net6.0\baithi.genruntimeconfig.cache
+D:\KIET0904\baithi\obj\Debug\net6.0\ref\baithi.dll
