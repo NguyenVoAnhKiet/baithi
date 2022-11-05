@@ -62,12 +62,14 @@ namespace baithi
         {
             internal NhanVien manv;
             internal HangMuc mahm;
-            internal double songaycong;
-            public ThamGia(NhanVien manv, HangMuc mahm, double songaycong)
+            internal DateTime ngaythamgia;
+            internal TimeSpan songaycong;
+            public ThamGia(NhanVien manv, HangMuc mahm, string ngaythamgia)
             {
                 this.manv = manv;
                 this.mahm = mahm;
-                this.songaycong = songaycong;
+                this.ngaythamgia = DateTime.Parse(ngaythamgia);
+                this.songaycong = DateTime.Now.Subtract(this.ngaythamgia);
             }
         }
     }

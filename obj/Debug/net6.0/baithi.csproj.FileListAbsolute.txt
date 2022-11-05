@@ -1,0 +1,5 @@
+D:\KIET0904\baithi\obj\Debug\net6.0\baithi.csproj.AssemblyReference.cache
+D:\KIET0904\baithi\obj\Debug\net6.0\baithi.GeneratedMSBuildEditorConfig.editorconfig
+D:\KIET0904\baithi\obj\Debug\net6.0\baithi.AssemblyInfoInputs.cache
+D:\KIET0904\baithi\obj\Debug\net6.0\baithi.AssemblyInfo.cs
+D:\KIET0904\baithi\obj\Debug\net6.0\baithi.csproj.CoreCompileInputs.cache
